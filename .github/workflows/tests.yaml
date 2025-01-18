@@ -3,7 +3,7 @@ name: unit-tests
 on:
   push:
     branches: [ master ]
-  pull_request:
+  pull_request: 
     branches: [ master ]
 
 jobs:
@@ -12,12 +12,12 @@ jobs:
 
     steps:
     - name: Checkout code
-    uses: actions/checkout@v4
-    
+      uses: actions/checkout@v4
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.12.4'
+        python-version: '3.12.7'  # Specify the Python version you want to use    
 
     - name: Install Package in Editable Mode with Python Dependencies
       run: |
