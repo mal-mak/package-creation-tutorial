@@ -18,4 +18,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    print("Hello! This my first published package.")
     main()
