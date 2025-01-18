@@ -18,10 +18,6 @@ class TestStringOps(unittest.TestCase):
         self.assertEqual(count_vowels("hello"), 2)
         self.assertEqual(count_vowels("AEIOU"), 5)
 
-    def test_count_vowels_failing(self):
-        """Test the count_vowels function."""
-        self.assertEqual(count_vowels("hello"), 3)
-
     def test_capitalize_words(self):
         """Test the capitalize_words function."""
         self.assertEqual(capitalize_words("hello world"), "Hello World")
